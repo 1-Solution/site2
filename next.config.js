@@ -1,10 +1,9 @@
-module.exports = {
-  async rewrites() {
-    return [
-      {
-        source: '/admin',
-        destination: '/admin/index.html',
-      },
-    ]
-  },
-}
+/**
+ * @type {import('next').NextConfig}
+ */
+
+const nextConfig = {
+  reactStrictMode: true,
+};
+
+module.exports = nextConfig;
