@@ -3,11 +3,13 @@ import config from "@config/config.json";
 import menu from "@config/menu.json";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { getStaticProps } from "pages";
 import React, { useState } from "react";
 
 const Header = () => {
   //router
   const router = useRouter();
+  const { locale } = router
 
   // distructuring the main menu from menu object
   const { main } = menu;
@@ -17,7 +19,7 @@ const Header = () => {
 
   // logo source
   const { logo } = config.site;
-  const { enable, label, link } = config.nav_button;
+  const { enable, label, link } = config[locale].nav_button;
 
   return (
     <header className="header">

@@ -14,23 +14,44 @@
     "summary_length": 200,
     "blog_folder": "blogs"
   },
+  "en": {
+    "nav_button": {
+      "enable": true,
+      "label": "Get Started",
+      "link": "/contact"
+    },
 
-  "nav_button": {
-    "enable": true,
-    "label": "Get Started",
-    "link": "/contact"
+    "params": {
+      "contact_form_action": "",
+      "tag_manager_id": "",
+      "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
+      "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
+    },
+
+    "metadata": {
+      "meta_author": "Themefisher",
+      "meta_image": "",
+      "meta_description": "A SAAS template for nextjs"
+    }
   },
+  "fr": {
+    "nav_button": {
+      "enable": true,
+      "label": "Get Started",
+      "link": "/contact"
+    },
 
-  "params": {
-    "contact_form_action": "",
-    "tag_manager_id": "",
-    "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-    "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
-  },
+    "params": {
+      "contact_form_action": "",
+      "tag_manager_id": "",
+      "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
+      "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
+    },
 
-  "metadata": {
-    "meta_author": "Themefisher",
-    "meta_image": "",
-    "meta_description": "A SAAS template for nextjs"
+    "metadata": {
+      "meta_author": "Themefisher",
+      "meta_image": "",
+      "meta_description": "A SAAS template for nextjs"
+    }
   }
 }

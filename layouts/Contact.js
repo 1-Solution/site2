@@ -1,10 +1,19 @@
 import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
 
-const Contact = ({ data }) => {
+export const getStaticProps = (props, { locale }) => {
+  return {
+    props: {
+      locale,
+      ...props
+    }
+  };
+};
+
+const Contact = ({ data, locale }) => {
   const { frontmatter } = data;
   const { title, info } = frontmatter;
-  const { contact_form_action } = config.params;
+  const { contact_form_action } = config[locale].params;
 
   return (
     <section className="section">

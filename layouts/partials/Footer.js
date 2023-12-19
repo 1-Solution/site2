@@ -4,11 +4,20 @@ import menu from "@config/menu.json";
 import social from "@config/social.json";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
+import { useRouter } from 'next/router'
 import Link from "next/link";
 
+
 const Footer = () => {
-  const { copyright, footer_content } = config.params;
+  const router = useRouter()
+  const { pathname, asPath, query, locale } = router
+  const { footer_content } = config[locale].params;
   const { footer } = menu;
+
+  const changeLocale = (nextLocale) => {
+    router.push({ pathname, query }, asPath, { locale: nextLocale });
+  }
+
   return (
     <footer className="section bg-theme-light pb-0">
       <div className="container">
@@ -46,7 +55,21 @@ const Footer = () => {
         </div>
         {/* copyright */}
         <div className="border-t border-border py-6">
-          {markdownify(copyright, "p", "text-sm text-center")}
+          <span
+            onClick={() => {
+              changeLocale('fr')
+            }}
+          >
+            fr
+          </span>
+          <span className="mx-2">|</span>
+          <span
+            onClick={() => {
+              changeLocale('en')
+            }}
+          >
+            en
+          </span>
         </div>
       </div>
     </footer>

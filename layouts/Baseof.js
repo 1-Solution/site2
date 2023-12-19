@@ -12,11 +12,12 @@ const Base = ({
   image,
   noindex,
   canonical,
-  children,
+  children
 }) => {
-  const { meta_image, meta_author, meta_description } = config.metadata;
+  const router = useRouter()
+  const { locale } = router
+  const { meta_image, meta_author, meta_description } = config[locale].metadata;
   const { base_url } = config.site;
-  const router = useRouter();
 
   return (
     <>

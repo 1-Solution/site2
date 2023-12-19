@@ -2,11 +2,14 @@ import config from "@config/config.json";
 import theme from "@config/theme.json";
 import Head from "next/head";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import TagManager from "react-gtm-module";
 import "styles/style.scss";
 
 const App = ({ Component, pageProps }) => {
-  // default theme setup
+
+  const router = useRouter()
+  const { locale } = router
 
   // import google font css
   const pf = theme.fonts.font_family.primary;
@@ -22,12 +25,12 @@ const App = ({ Component, pageProps }) => {
 
   // google tag manager (gtm)
   const tagManagerArgs = {
-    gtmId: config.params.tag_manager_id,
+    gtmId: config[locale].params.tag_manager_id,
   };
   useEffect(() => {
     setTimeout(() => {
       process.env.NODE_ENV === "production" &&
-        config.params.tag_manager_id &&
+        config[locale].params.tag_manager_id &&
         TagManager.initialize(tagManagerArgs);
     }, 5000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
