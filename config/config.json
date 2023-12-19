@@ -1,9 +1,9 @@
 {
   "site": {
-    "title": "Bigspring Light Nextjs",
+    "title": "1-Solution",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "favicon": "/images/1_solution_logo-aqua.png",
+    "logo": "/images/LogoLong.png",
     "logo_width": "200",
     "logo_height": "48",
     "logo_text": "Bigspring Light"
