@@ -3,16 +3,16 @@ import config from "@config/config.json";
 import menu from "@config/menu.json";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { getStaticProps } from "pages";
 import React, { useState } from "react";
 
 const Header = () => {
   //router
   const router = useRouter();
-  const { locale } = router
+  const { locale } = router;
+  console.log(locale);
 
   // distructuring the main menu from menu object
-  const { main } = menu;
+  const { main } = menu[locale];
 
   // states declaration
   const [navOpen, setNavOpen] = useState(false);

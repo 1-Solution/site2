@@ -12,7 +12,7 @@ const Footer = () => {
   const router = useRouter()
   const { pathname, asPath, query, locale } = router
   const { footer_content } = config[locale].params;
-  const { footer } = menu;
+  const { footer } = menu[locale];
 
   const changeLocale = (nextLocale) => {
     router.push({ pathname, query }, asPath, { locale: nextLocale });

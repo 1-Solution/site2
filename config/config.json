@@ -17,7 +17,7 @@
   "en": {
     "nav_button": {
       "enable": true,
-      "label": "Get Started",
+      "label": "Contact Us",
       "link": "/contact"
     },
 
@@ -29,15 +29,15 @@
     },
 
     "metadata": {
-      "meta_author": "Themefisher",
+      "meta_author": "1-Solution",
       "meta_image": "",
-      "meta_description": "A SAAS template for nextjs"
+      "meta_description": ""
     }
   },
   "fr": {
     "nav_button": {
       "enable": true,
-      "label": "Get Started",
+      "label": "Nous Contacter",
       "link": "/contact"
     },
 
@@ -49,9 +49,9 @@
     },
 
     "metadata": {
-      "meta_author": "Themefisher",
+      "meta_author": "1-Solution",
       "meta_image": "",
-      "meta_description": "A SAAS template for nextjs"
+      "meta_description": ""
     }
   }
 }
