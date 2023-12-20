@@ -1,12 +1,11 @@
 ---
-title: "Contact Us"
+title: "Nous contacter"
 layout: "contact"
 draft: false
 info: 
-  title: Why you should contact us!
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
+  title: Nous contacter!
+  description: Laissez-nous vous aider à tirer le maximum de vos ressources. Avec 1-SOLUTION, vous aurez votre solution, pour optimiser et automatiser.
   contacts: 
-    - "phone: +88 125 256 452"
-    - "Mail: [info@bigspring.com](mailto:info@bigspring.com)"
-    - "Address: 360 Main rd, Rio, Brazil"
+    - "Mail: [info@1-solution.ca](mailto:info@1-solution.ca)"
+    - "Address: 6300 Av. Auteuil Suite #505, Brossard, Québec, Canada"
 ---

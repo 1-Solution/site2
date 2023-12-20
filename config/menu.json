@@ -2,29 +2,29 @@
   "fr": {
     "main": [
       {
-        "name": "About Us",
+        "name": "À Propos",
         "url": "/about"
       },
       {
-        "name": "Careers",
+        "name": "Carrière",
         "url": "/careers"
       },
       {
-        "name": "Contact",
+        "name": "Nous Contacter",
         "url": "/contact"
       }
     ],
     "footer": [
       {
-        "text": "About Us",
+        "text": "À Propos",
         "url": "/about"
       },
       {
-        "text": "Careers",
+        "text": "Carrière",
         "url": "/careers"
       },
       {
-        "text": "Contact",
+        "text": "Nous Contacter",
         "url": "/contact"
       }
     ]

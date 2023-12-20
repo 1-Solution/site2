@@ -1,7 +1,10 @@
 import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
+import { useRouter } from "next/router";
 
-const Contact = ({ data, locale }) => {
+const Contact = ({ data }) => {
+  const router = useRouter();
+  const { locale } = router;
   const { frontmatter } = data;
   const { title, info } = frontmatter;
   const { contact_form_action } = config[locale].params;
