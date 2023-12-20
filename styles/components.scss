@@ -14,6 +14,14 @@
   @apply mb-5 leading-10;
 }
 
+.border {
+  border-style: solid 5px;
+  border-color: #b5611d;
+}
+
+.full-height {
+  height: 100%;
+}
 // social icon style
 .social-icons {
   @apply space-x-4;
