@@ -56,21 +56,21 @@ const Footer = () => {
             </div>
           </div>
           <div className="border-t border-border py-6">
-            <span
+            <a href="#"
               onClick={() => {
                 changeLocale("fr");
               }}
             >
               fr
-            </span>
+            </a>
             <span className="mx-2">|</span>
-            <span
+            <a href="#"
               onClick={() => {
                 changeLocale("en");
               }}
             >
               en
-            </span>
+            </a>
           </div>
         </div>
       </div>
