@@ -8,4 +8,10 @@ info:
   contacts: 
     - "Mail: [info@1-solution.ca](mailto:info@1-solution.ca)"
     - "Address: 6300 Av. Auteuil Suite #505, Brossard, Quebec, Canada"
+fields:
+  name: Name
+  email: Your email
+  subject: Subject
+  message: Your message
+  submit: Send now
 ---
