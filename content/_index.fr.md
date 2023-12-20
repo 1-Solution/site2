@@ -9,27 +9,17 @@ banner:
 
 # feature
 feature: 
-  title: Something You Need To Know
+  title: Ce que 1-SOLUTION peut faire pour vous
   features:
-  - name: "Clean Code"
+  - name: "Développement de solutions d’affaire sur mesure"
     icon: "/images/code.svg"
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Object Oriented"
+  - name: "Rehaussement et modernisation de solutions"
     icon: "/images/oop.svg"
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "24h Service"
+  - name: "Expertise-conseil"
     icon: "/images/user-clock.svg"
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Value for Money"
-    icon: "/images/love.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Faster Response"
-    icon: "/images/speedometer.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Cloud Support"
-    icon: "/images/cloud.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-
 # services
 services:
   - title: "It is the most advanced digital marketing and it company."
