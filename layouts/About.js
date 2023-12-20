@@ -2,39 +2,69 @@ import { markdownify } from "@lib/utils/textConverter";
 
 function About({ data }) {
   const { frontmatter } = data;
-  const { title, mission, vision, values } = frontmatter;
+  const { title, mission, vision, values, valueTitle } = frontmatter;
   return (
-    (
-      <section className="section">
-        <div className="container">
-          {markdownify(title, "h1", "text-center font-normal")}
-          <div className="section row  -mt-6">
-            {mission.map((mission, index) => (
-              <div key={index} className="col-6 mt-6 md:col-6">
-                <div className="p-12  shadow">
-                  <div className=" relative">
-                    {markdownify(mission.title, "h4","text-center font-normal")}
-                  </div>
-                  {markdownify(mission.answer, "p", "faq-body mt-4")}
+
+    <div>
+    <section className="section">
+      <div className="container">
+        {markdownify(title, "h1", "text-center font-normal ")}
+        <div className="section row  -mt-2">
+          {vision.map((vision, index) => (
+            <div key={index} className=" mt-2">
+              <div className="p-12  shadow bg-white">
+                <div className=" relative">
+                  {markdownify(
+                    vision.title,
+                    "h2",
+                    "text-center",
+                    "font-normal"
+                  )}
                 </div>
+                {markdownify(vision.answer, "p", "faq-body mt-4 text-center")}
               </div>
-            ))}
-          </div>
-          <div className="section row  -mt-6">
-            {values.map((values, index) => (
-              <div key={index} className="col-6 mt-6 md:col-6">
-                <div className="p-12  shadow">
-                  <div className="faq-head relative">
-                    {markdownify(values.title, "h4")}
-                  </div>
-                  {markdownify(values.answer, "p", "faq-body mt-4")}
-                </div>
-              </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
-    )
+      </div>
+      <div className="container">
+        <div className="section row  -mt-2">
+          {mission.map((mission, index) => (
+            <div key={index} className=" mt-2">
+              <div className="p-12  shadow bg-white">
+                <div className=" relative">
+                  {markdownify(
+                    mission.title,
+                    "h2",
+                    "text-center",
+                    "font-normal"
+                  )}
+                </div>
+                {markdownify(mission.answer, "p", "faq-body mt-4 text-justify")}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section className="section bg-theme-light">
+    <div className="container ">
+        <div className="section row  -mt-2 bg-theme-light">
+          {markdownify(valueTitle, "h1", "text-center font-normal")}
+          {values.map((values, index) => (
+            <div key={index} className="col-6 mt-2 md:col-6">
+              <div className="p-12 shadow bg-white">
+                <div className="faq-head relative">
+                  {markdownify(values.title, "h4")}
+                </div>
+                {markdownify(values.answer, "p", "faq-body mt-4 text-justify")}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    </div>
   );
 }
 
