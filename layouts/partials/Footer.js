@@ -45,7 +45,6 @@ const Footer = () => {
                   height={config.footer.partner_logo_height}
                   alt="Microsoft Partner"
                 />
-                <Social source={social} className="social-icons mb-10" />
               </div>
               
             </div>
