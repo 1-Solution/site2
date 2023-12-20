@@ -8,16 +8,17 @@ import React, { useState } from "react";
 const Header = () => {
   //router
   const router = useRouter();
+  const { locale } = router;
 
   // distructuring the main menu from menu object
-  const { main } = menu;
+  const { main } = menu[locale];
 
   // states declaration
   const [navOpen, setNavOpen] = useState(false);
 
   // logo source
   const { logo } = config.site;
-  const { enable, label, link } = config.nav_button;
+  const { enable, label, link } = config[locale].nav_button;
 
   return (
     <header className="header">

@@ -8,29 +8,48 @@
     "logo_height": "48",
     "logo_text": "Bigspring Light"
   },
-
+  "footer": {
+    "partner_logo": "/images/Microsoft_Partner_Black_Horizontal.png",
+    "partner_logo_width": "203",
+    "partner_logo_height": "68"
+  },
   "settings": {
     "pagination": 4,
     "summary_length": 200,
     "blog_folder": "blogs"
   },
-
-  "nav_button": {
-    "enable": true,
-    "label": "Get Started",
-    "link": "/contact"
+  "en": {
+    "nav_button": {
+      "enable": true,
+      "label": "Contact Us",
+      "link": "/contact"
+    },
+    "params": {
+      "contact_form_action": "",
+      "tag_manager_id": "",
+      "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
+    },
+    "metadata": {
+      "meta_author": "1-Solution",
+      "meta_image": "",
+      "meta_description": ""
+    }
   },
-
-  "params": {
-    "contact_form_action": "",
-    "tag_manager_id": "",
-    "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-    "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
-  },
-
-  "metadata": {
-    "meta_author": "Themefisher",
-    "meta_image": "",
-    "meta_description": "A SAAS template for nextjs"
+  "fr": {
+    "nav_button": {
+      "enable": true,
+      "label": "Nous Contacter",
+      "link": "/contact"
+    },
+    "params": {
+      "contact_form_action": "",
+      "tag_manager_id": "",
+      "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
+    },
+    "metadata": {
+      "meta_author": "1-Solution",
+      "meta_image": "",
+      "meta_description": ""
+    }
   }
 }

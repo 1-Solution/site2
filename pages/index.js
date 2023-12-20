@@ -10,7 +10,7 @@ import "swiper/swiper.min.css";
 import { getListPage } from "../lib/contentParser";
 
 const Home = ({ frontmatter }) => {
-  const { banner, feature, services, workflow, call_to_action } = frontmatter;
+  const { banner, feature, call_to_action } = frontmatter;
   const { title } = config.site;
 
   return (
@@ -31,6 +31,9 @@ const Home = ({ frontmatter }) => {
                   {banner.button.label}
                 </Link>
               )}
+
+              </div>
+              <div>
               <Image
                 className="mx-auto mt-12"
                 src={banner.image}
@@ -60,8 +63,8 @@ const Home = ({ frontmatter }) => {
                   <Image
                     className="mx-auto"
                     src={item.icon}
-                    width={30}
-                    height={30}
+                    width={90}
+                    height={90}
                     alt=""
                   />
                 )}
@@ -75,94 +78,15 @@ const Home = ({ frontmatter }) => {
         </div>
       </section>
 
-      {/* services */}
-      {services.map((service, index) => {
-        const isOdd = index % 2 > 0;
-        return (
-          <section
-            key={`service-${index}`}
-            className={`section ${isOdd && "bg-theme-light"}`}
-          >
-            <div className="container">
-              <div className="items-center gap-8 md:grid md:grid-cols-2">
-                {/* Carousel */}
-                <div className={`service-carousel ${!isOdd && "md:order-2"}`}>
-                  <Swiper
-                    modules={[Autoplay, Pagination]}
-                    pagination={
-                      service.images.length > 1 ? { clickable: true } : false
-                    }
-                    autoplay={{
-                      delay: 5000,
-                      disableOnInteraction: false,
-                    }}
-                    init={service?.images > 1 ? false : true}
-                  >
-                    {/* Slides */}
-                    {service?.images.map((slide, index) => (
-                      <SwiperSlide key={index}>
-                        <Image src={slide} alt="" width={600} height={500} />
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </div>
-
-                {/* Content */}
-                <div
-                  className={`service-content mt-5 md:mt-0 ${
-                    !isOdd && "md:order-1"
-                  }`}
-                >
-                  <h2 className="font-bold leading-[40px]">{service?.title}</h2>
-                  <p className="mt-4 mb-2">{service?.content}</p>
-                  {service.button.enable && (
-                    <Link
-                      href={service?.button.link}
-                      className="cta-link inline-flex items-center text-primary"
-                    >
-                      {service?.button.label}
-                      <Image
-                        className="ml-1"
-                        src="/images/arrow-right.svg"
-                        width={18}
-                        height={14}
-                        alt="arrow"
-                      />
-                    </Link>
-                  )}
-                </div>
-              </div>
-            </div>
-          </section>
-        );
-      })}
-
-      {/* workflow */}
-      <section className="section pb-0">
-        <div className="mb-8 text-center">
-          {markdownify(
-            workflow.title,
-            "h2",
-            "mx-auto max-w-[400px] font-bold leading-[44px]"
-          )}
-          {markdownify(workflow.description, "p", "mt-3")}
-        </div>
-        <Image
-          src={workflow.image}
-          alt="workflow image"
-          width={1920}
-          height={296}
-        />
-      </section>
-
       {/* Cta */}
       <Cta cta={call_to_action} />
     </Base>
   );
 };
 
-export const getStaticProps = async () => {
-  const homePage = await getListPage("content/_index.md");
+export const getStaticProps = async ({locale}) => {
+  const pagePath = `content/_index.${locale}.md`;
+  const homePage = await getListPage(pagePath);
   const { frontmatter } = homePage;
   return {
     props: {

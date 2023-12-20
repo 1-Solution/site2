@@ -1,6 +1,7 @@
 // section style
 .section {
   @apply pt-[70px] pb-[70px];
+  background-color:ivory;
 }
 
 // container
@@ -20,7 +21,6 @@
     @apply inline-block;
     a {
       @apply block h-9 w-9 rounded-full border border-primary text-center text-white transition hover:bg-primary;
-
       svg {
         @apply m-auto h-9 fill-primary;
       }
