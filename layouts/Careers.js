@@ -2,25 +2,55 @@ import { markdownify } from "@lib/utils/textConverter";
 
 function Careers({ data }) {
   const { frontmatter } = data;
-  const { title, careers} = frontmatter;
+  const { title, profiles, cv, perks, perk_title} = frontmatter;
   return (
-    <section className="section">
-      <div className="container">
-        {markdownify(title, "h1", "text-center font-normal")}
-        <div className="section row  -mt-6">
-          {careers.map((about, index) => (
-            <div key={index} className="col-12 mt-6 md:col-6">
-              <div className="p-12  shadow">
-                <div className="faq-head relative">
-                  {markdownify(careers.title, "h4")}
+    <div title={title}>
+      <section className="section">
+        <div className="container">
+          {markdownify(title, "h1", "text-center font-normal")}
+          <div className="section row -mt-2">
+            {profiles.map((profile, index) => (
+              <div key={index} className="mt-2">
+                <div className="bg-white p-12 shadow border feature-card rounded-xl">
+                  <div className="relative">
+                    {markdownify(
+                      profile.title,
+                      "h2",
+                      "text-center",
+                      "font-normal"
+                    )}
+                  </div>
+                  {markdownify(profile.description, "p", "mt-4 text-justify")}
                 </div>
-                {markdownify(careers.answer, "p", "faq-body mt-4")}
               </div>
+            ))}
+          </div>
+          <div className="bg-white p-12 shadow border feature-card rounded-xl">
+            <div className="relative">
+              {markdownify(
+                perk_title,
+                "h2",
+                "text-center",
+                "font-normal")}
+            </div>
+          {perks.map((perk, index) => (
+            <div key={index} className="mt-2">
+              <div className="relative">
+                    {markdownify(
+                      perk.perk,
+                      "text-left",
+                      "font-normal"
+                    )}
+                  </div>
             </div>
           ))}
+          </div>
+          <div className="relative p-12">
+              {markdownify(cv, "h5", "text-center")}
+            </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 

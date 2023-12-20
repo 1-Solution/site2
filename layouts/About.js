@@ -20,7 +20,7 @@ function About({ data }) {
                       "font-normal"
                     )}
                   </div>
-                  {markdownify(vision.answer, "p", "faq-body mt-4 text-center")}
+                  {markdownify(vision.answer, "p", "mt-4 text-center")}
                 </div>
               </div>
             ))}
@@ -42,7 +42,7 @@ function About({ data }) {
                   {markdownify(
                     mission.answer,
                     "p",
-                    "faq-body mt-4 text-justify"
+                    "mt-4 text-justify"
                   )}
                 </div>
               </div>
@@ -57,13 +57,13 @@ function About({ data }) {
             {values.map((values, index) => (
               <div key={index} className="col-6 mt-2 md:col-6">
                 <div className="bg-white p-12 shadow border feature-card rounded-xl full-height">
-                  <div className="faq-head relative">
+                  <div className="relative">
                     {markdownify(values.title, "h4")}
                   </div>
                   {markdownify(
                     values.answer,
                     "p",
-                    "faq-body mt-4 text-justify"
+                    "mt-4 text-justify"
                   )}
                 </div>
               </div>
