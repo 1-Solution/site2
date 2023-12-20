@@ -38,6 +38,13 @@ const Footer = () => {
                   />
                 </Link>
                 {markdownify(footer_content, "p", "mt-3 mb-6")}
+                <Image 
+                  className="mb-5"
+                  src={config.footer.partner_logo}
+                  width={config.footer.partner_logo_width}
+                  height={config.footer.partner_logo_height}
+                  alt="Microsoft Partner"
+                />
                 <Social source={social} className="social-icons mb-10" />
               </div>
               
