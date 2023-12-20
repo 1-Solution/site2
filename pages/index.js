@@ -161,8 +161,10 @@ const Home = ({ frontmatter }) => {
   );
 };
 
-export const getStaticProps = async () => {
-  const homePage = await getListPage("content/_index.md");
+export const getStaticProps = async ({locale}) => {
+  const pagePath = `content/_index.${locale}.md`;
+  console.log(pagePath);
+  const homePage = await getListPage(pagePath);
   const { frontmatter } = homePage;
   return {
     props: {

@@ -1,15 +1,6 @@
 import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
 
-export const getStaticProps = (props, { locale }) => {
-  return {
-    props: {
-      locale,
-      ...props
-    }
-  };
-};
-
 const Contact = ({ data, locale }) => {
   const { frontmatter } = data;
   const { title, info } = frontmatter;

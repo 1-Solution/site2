@@ -9,7 +9,6 @@ const Header = () => {
   //router
   const router = useRouter();
   const { locale } = router;
-  console.log(locale);
 
   // distructuring the main menu from menu object
   const { main } = menu[locale];

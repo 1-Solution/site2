@@ -4,7 +4,7 @@ banner:
   content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
   image: /images/banner-art.svg
   button:
-    label: "Contact Us"
+    label: "Nous Contacter"
     link: "/contact"
 
 # feature
@@ -40,7 +40,7 @@ services:
       - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
+      label: Jetez y un oeil
       link: /contact
 
   - title: "It is a privately owned Information and cyber security company"
@@ -49,7 +49,7 @@ services:
       - "/images/service-slide-1.png"
     button:
       enable: true
-      label: Check it out
+      label: Jetez y un oeil
       link: /contact
   
   - title: "It’s a team of experienced and skilled people with distributions"
@@ -60,7 +60,7 @@ services:
       - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
+      label: Jetez y un oeil
       link: /contact
 
   - title: "A company standing different from others"
@@ -71,7 +71,7 @@ services:
       - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
+      label: Jetez y un oeil
       link: /contact
 
 # workflow
@@ -87,6 +87,6 @@ call_to_action:
   image: '/images/cta.svg'
   button:
     enable: true
-    label: "Contact Us"
+    label: "Nous Contacter"
     link: "/contact"
 ---
