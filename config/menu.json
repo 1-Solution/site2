@@ -1,10 +1,6 @@
 {
   "main": [
     {
-      "name": "Services",
-      "url": "/"
-    },
-    {
       "name": "About Us",
       "url": "/about"
     },
@@ -18,10 +14,6 @@
     }
   ],
   "footer": [
-    {
-      "text": "Services",
-      "url": "/"
-    },
     {
       "text": "About Us",
       "url": "/about"
