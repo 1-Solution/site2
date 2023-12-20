@@ -8,7 +8,11 @@
     "logo_height": "48",
     "logo_text": "Bigspring Light"
   },
-
+  "footer": {
+    "partner_logo": "/images/Microsoft_Partner_Black_Horizontal.png",
+    "partner_logo_width": "203",
+    "partner_logo_height": "68"
+  },
   "settings": {
     "pagination": 4,
     "summary_length": 200,
@@ -20,14 +24,11 @@
       "label": "Contact Us",
       "link": "/contact"
     },
-
     "params": {
       "contact_form_action": "",
       "tag_manager_id": "",
-      "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-      "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
+      "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
     },
-
     "metadata": {
       "meta_author": "1-Solution",
       "meta_image": "",
@@ -40,14 +41,11 @@
       "label": "Nous Contacter",
       "link": "/contact"
     },
-
     "params": {
       "contact_form_action": "",
       "tag_manager_id": "",
-      "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
-      "copyright": "Designed and Developed By [Themefisher](https://themefisher.com/)"
+      "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
     },
-
     "metadata": {
       "meta_author": "1-Solution",
       "meta_image": "",
