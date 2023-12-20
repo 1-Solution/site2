@@ -31,5 +31,11 @@
     "meta_author": "Themefisher",
     "meta_image": "",
     "meta_description": "A SAAS template for nextjs"
+  },
+  
+  "footer": {
+    "partner_logo": "/images/Microsoft_Partner_Black_Horizontal.png",
+    "partner_logo_width": "203",
+    "partner_logo_height": "68"
   }
 }
