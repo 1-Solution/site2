@@ -14,6 +14,7 @@ const Footer = () => {
       <div className="container">
         {/* footer menu */}
         <div className="row">
+          <div className="col">
           {footer.map((col) => {
             return (
               <div className="mb-12 sm:col-3 lg:col-3" key={col.text}>
@@ -23,21 +24,26 @@ const Footer = () => {
               </div>
             );
           })}
-          {/* social icons */}
-          <div className="md-12 sm:col-3 lg:col-5">
-            <Link href="/" aria-label="Bigspring">
-              <Image
-                src={config.site.logo}
-                width={config.site.logo_width}
-                height={config.site.logo_height}
-                alt=""
-              />
-            </Link>
-            {markdownify(footer_content, "p", "mt-3 mb-6")}
-            <Social source={social} className="social-icons mb-10" />
           </div>
-        </div>
-        <div className="border-t border-border py-6">
+          
+          <div className="col-6">
+          {/* social icons */}  
+            <div className="md-12 sm:col-3 lg:col-10">
+                <Link href="/" aria-label="Bigspring">
+                  <Image
+                    src={config.site.logo}
+                    width={config.site.logo_width}
+                    height={config.site.logo_height}
+                    alt=""
+                  />
+                </Link>
+                {markdownify(footer_content, "p", "mt-3 mb-6")}
+                <Social source={social} className="social-icons mb-10" />
+              </div>
+              
+            </div>
+            <div className="border-t border-border py-6">
+            </div>
         </div>
       </div>
     </footer>
