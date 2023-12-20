@@ -10,8 +10,7 @@ import { getRegularPage, getSinglePage } from "@lib/contentParser";
 
 // for all regular pages
 const RegularPages = ({ data }) => {
-  const { title, meta_title, description, image, noindex, canonical, layout } =
-    data.frontmatter;
+  const { title, meta_title, description, image, noindex, canonical, layout } = data.frontmatter;
   const { content } = data;
 
   return (
@@ -43,24 +42,26 @@ export default RegularPages;
 
 // for regular page routes
 export const getStaticPaths = async () => {
-  const allslugs = getSinglePage("content");
-  const slugs = allslugs.map((item) => item.slug);
-  const paths = slugs.map((slug) => ({
-    params: {
-      regular: slug,
-    },
-  }));
+  const allFiles = getSinglePage("content");
+  const paths = allFiles.map((f) => {
+    return {
+      params: {
+        regular: f.slug,
+      },
+      locale: f.locale,
+    }
+  });
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 };
 
 // for regular page data
-export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params, locale }) => {
   const { regular } = params;
-  const regularPage = await getRegularPage(regular);
+  const regularPage = await getRegularPage(regular, locale);
 
   return {
     props: {
