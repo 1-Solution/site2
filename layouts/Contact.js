@@ -11,7 +11,7 @@ const Contact = ({ data }) => {
   const { contact_form_action } = config[locale].params;
 
   return (
-    <section className="section">
+    <section className="section contact">
       <div className="container">
         {markdownify(title, "h1", "text-center font-normal")}
         <div className="section row pb-0">
