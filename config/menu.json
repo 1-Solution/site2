@@ -19,24 +19,20 @@
   ],
   "footer": [
     {
-      "menu": [
-        {
-          "text": "Services",
-          "url": "/"
-        },
-        {
-          "text": "About Us",
-          "url": "/about"
-        },
-        {
-          "text": "Careers",
-          "url": "/careers"
-        },
-        {
-          "text": "Contact",
-          "url": "/contact"
-        }
-      ]
+      "text": "Services",
+      "url": "/"
+    },
+    {
+      "text": "About Us",
+      "url": "/about"
+    },
+    {
+      "text": "Careers",
+      "url": "/careers"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact"
     }
   ]
 }

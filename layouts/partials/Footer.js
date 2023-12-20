@@ -16,17 +16,10 @@ const Footer = () => {
         <div className="row">
           {footer.map((col) => {
             return (
-              <div className="mb-12 sm:col-3 lg:col-3" key={col.name}>
-                {markdownify(col.name, "h2", "h4")}
-                <ul className="mt-6">
-                  {col?.menu.map((item) => (
-                    <li className="mb-2" key={item.text}>
-                      <Link href={item.url} rel="">
-                        {item.text}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <div className="mb-12 sm:col-3 lg:col-3" key={col.text}>
+                  <Link href={col.url} rel="" className="h4 font-bold">
+                    {col.text}
+                  </Link>
               </div>
             );
           })}
