@@ -8,7 +8,6 @@ const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title, info, fields } = frontmatter;
   const { name, email, subject, message, submit } = fields;
-  console.log(name)
   const { contact_form_action } = config[locale].params;
 
   return (
