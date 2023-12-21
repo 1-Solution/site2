@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="col">
             {footer.map((col) => {
               return (
-                <div className="mb-12 sm:col-3 lg:col-3" key={col.text}>
+                <div className=" nav-link" key={col.text}>
                   <Link href={col.url} rel="" className="h5 font-bold">
                     {col.text}
                   </Link>

@@ -1,6 +1,7 @@
 ---
 title: About us
 valueTitle: Our values
+teamTitle: Our team
 layout: about
 draft: false
 vision:
@@ -21,4 +22,19 @@ values:
 
   - title: Competence
     answer: We're constantly striving for improvement `:` the acquisition of new knowledge, new ways of doing things and the exploration of new trends are part of our DNA.
+team:
+  - name: Antoine Theriault-Richer  
+    bio: test  test
+
+  - name: Bruno Laporte
+    bio: test  test
+
+  - name: Olivier Poupier
+    bio: test  test
+
+  - name: Jean-Christophe Viau
+    bio: test  test
+    
+  - name: Simon Pepin
+    bio: test  test
 ---

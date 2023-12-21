@@ -9,15 +9,15 @@ banner:
 
 # feature
 feature: 
-  title: Something You Need To Know
+  title: What can 1-SOLUTION do for you
   features:
-  - name: "Clean Code"
+  - name: "Development of customized business solutions"
     icon: "/images/code.svg"
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Object Oriented"
+  - name: "Upgrading and modernization of solutions"
     icon: "/images/oop.svg"
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "24h Service"
+  - name: "Consulting"
     icon: "/images/user-clock.svg"
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
 

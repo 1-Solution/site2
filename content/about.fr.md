@@ -1,6 +1,7 @@
 ---
 title: À propos de nous
-valueTitle: Nos valeurs
+valueTitle: Nos Valeurs
+teamTitle: Notre Équipe
 layout: about
 draft: false
 vision:
@@ -21,4 +22,19 @@ values:
     
   - title: Compétence
     answer: Nous continuons sans cesse de nous améliorer `:` l’acquisition de nouvelles connaissances, de nouvelles façons de faire et l'exploration de nouvelles tendances font partie de notre ADN.
+team:
+  - name: Antoine Theriault-Richer  
+    bio: test  test
+
+  - name: Bruno Laporte
+    bio: test  test
+
+  - name: Olivier Poupier
+    bio: test  test
+
+  - name: Jean-Christophe Viau
+    bio: test  test
+
+  - name: Simon Pepin
+    bio: test  test
 ---

@@ -8,11 +8,10 @@ const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title, info, fields } = frontmatter;
   const { name, email, subject, message, submit } = fields;
-  console.log(name)
   const { contact_form_action } = config[locale].params;
 
   return (
-    <section className="section">
+    <section className="section contact">
       <div className="container">
         {markdownify(title, "h1", "text-center font-normal")}
         <div className="section row pb-0">
