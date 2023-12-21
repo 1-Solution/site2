@@ -10,6 +10,32 @@ const Contact = ({ data }) => {
   const { name, email, subject, message, submit } = fields;
   const { contact_form_action } = config[locale].params;
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        // Email sent successfully, show a success message or redirect the user.
+        console.log('Email sent successfully');
+      } else {
+        // Handle email sending errors here
+        console.error('Email sending failed:', data.error);
+      }
+    } catch (error) {
+      console.error('An error occurred:', error);
+    }
+  };
+
   return (
     <section className="section contact">
       <div className="container">
@@ -20,6 +46,7 @@ const Contact = ({ data }) => {
               className="contact-form"
               method="POST"
               action={contact_form_action}
+              onSubmit={handleSubmit}
             >
               <div className="mb-3">
                 <input
