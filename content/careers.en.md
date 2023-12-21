@@ -1,5 +1,5 @@
 ---
-title: Careers
+title: Career
 layout: careers
 profiles:
 - title: Developer Analyst

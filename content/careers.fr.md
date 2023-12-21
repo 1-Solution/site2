@@ -1,5 +1,5 @@
 ---
-title: Carrières
+title: Carrière
 layout: careers
 profiles:
 - title: Développeur Analyste

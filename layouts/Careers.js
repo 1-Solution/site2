@@ -4,7 +4,7 @@ function Careers({ data }) {
   const { frontmatter } = data;
   const { title, profiles, cv, perks, perk_title} = frontmatter;
   return (
-    <div title={title}>
+    <div>
       <section className="section">
         <div className="container">
           {markdownify(title, "h1", "text-center font-normal")}
