@@ -2,7 +2,6 @@ import NotFound from "@layouts/404";
 import Base from "@layouts/Baseof";
 import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
-import Faq from "@layouts/Faq";
 import Careers from "@layouts/Careers";
 import About from "@layouts/About"
 import Pricing from "@layouts/Pricing";

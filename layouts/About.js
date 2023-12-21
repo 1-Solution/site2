@@ -20,7 +20,7 @@ function About({ data }) {
                       "font-normal"
                     )}
                   </div>
-                  {markdownify(vision.answer, "p", "faq-body mt-4 text-center")}
+                  {markdownify(vision.answer, "p", "mt-4 text-center")}
                 </div>
               </div>
             ))}
@@ -42,7 +42,7 @@ function About({ data }) {
                   {markdownify(
                     mission.answer,
                     "p",
-                    "faq-body mt-4 text-justify"
+                    "mt-4 text-justify"
                   )}
                 </div>
               </div>
@@ -63,7 +63,7 @@ function About({ data }) {
                   {markdownify(
                     values.answer,
                     "p",
-                    "faq-body mt-4 text-justify"
+                    "mt-4 text-justify"
                   )}
                 </div>
               </div>
