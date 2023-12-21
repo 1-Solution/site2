@@ -13,13 +13,10 @@ feature:
   features:
   - name: "Développement de solutions d’affaire sur mesure"
     icon: "/images/code.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
   - name: "Rehaussement et modernisation de solutions"
     icon: "/images/oop.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
   - name: "Expertise-conseil"
     icon: "/images/user-clock.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
 # services
 services:
   - title: "It is the most advanced digital marketing and it company."
