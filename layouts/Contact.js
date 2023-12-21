@@ -1,6 +1,7 @@
 import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 const Contact = ({ data }) => {
   const router = useRouter();
@@ -9,32 +10,6 @@ const Contact = ({ data }) => {
   const { title, info, fields } = frontmatter;
   const { name, email, subject, message, submit } = fields;
   const { contact_form_action } = config[locale].params;
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        // Email sent successfully, show a success message or redirect the user.
-        console.log('Email sent successfully');
-      } else {
-        // Handle email sending errors here
-        console.error('Email sending failed:', data.error);
-      }
-    } catch (error) {
-      console.error('An error occurred:', error);
-    }
-  };
 
   return (
     <section className="section contact">
@@ -45,8 +20,7 @@ const Contact = ({ data }) => {
             <form
               className="contact-form"
               method="POST"
-              action={contact_form_action}
-              onSubmit={handleSubmit}
+              action='https://formspree.io/f/xleoyvgl'
             >
               <div className="mb-3">
                 <input
@@ -77,6 +51,7 @@ const Contact = ({ data }) => {
               </div>
               <div className="mb-3">
                 <textarea
+                  name="message"
                   className="form-textarea w-full rounded-md"
                   rows="7"
                   placeholder={message}
