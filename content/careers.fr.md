@@ -7,12 +7,12 @@ profiles:
 
 perk_title: Les Avantages
 perks:
-- perk: •	Horaires flexibles
-- perk: •	Semaine de 35 heures
-- perk: •	BBQ 1-Solution
-- perk: •	Télétravail
-- perk: •	REER volontaire
-- perk: •	Nos fameux vendredi PM...
+- perk: En faveur d'horaires flexibles
+- perk: Semaine de 35 heures
+- perk: Notre BBQ 1-Solution
+- perk: Orienté télétravail
+- perk: REER volontaire avec contribution de l'employeur
+- perk: Nos fameux vendredi PM...
 
 cv: Interessé? Faites nous parvenir votre CV par courriel à cv@1-solution.ca
 ---

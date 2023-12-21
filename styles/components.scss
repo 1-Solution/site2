@@ -111,3 +111,10 @@
 .contact {
   min-height: 70vh;
 }
+
+.career-ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: disc;
+}

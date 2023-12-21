@@ -7,12 +7,12 @@ profiles:
 
 perk_title: Advantages
 perks:
-  - perk: •	Flexible schedule
-  - perk: •	35-hour week
-  - perk: •	1-Solution BBQ
-  - perk: •	Work from home
-  - perk: •	Voluntary RRSP
-  - perk: •	Our famous Friday PMs...
+  - perk: In favor of flexible schedule
+  - perk: 35-hour week
+  - perk: Our 1-Solution BBQ
+  - perk: Work from home oriented
+  - perk: Voluntary RRSP with employer contribution
+  - perk: Our famous Friday PMs...
 
 cv: Interested? Send us your CV via email at cv@1-solution.ca
 ---

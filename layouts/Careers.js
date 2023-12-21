@@ -2,7 +2,7 @@ import { markdownify } from "@lib/utils/textConverter";
 
 function Careers({ data }) {
   const { frontmatter } = data;
-  const { title, profiles, cv, perks, perk_title} = frontmatter;
+  const { title, profiles, cv, perks, perk_title } = frontmatter;
   return (
     <div>
       <section className="section">
@@ -25,7 +25,7 @@ function Careers({ data }) {
               </div>
             ))}
           </div>
-          <div className="bg-white p-12 shadow border feature-card rounded-xl">
+          <div className="bg-white p-12 shadow border feature-card rounded-xl flex flex-col justify-center items-center">
             <div className="relative">
               {markdownify(
                 perk_title,
@@ -33,21 +33,21 @@ function Careers({ data }) {
                 "text-center",
                 "font-normal")}
             </div>
-          {perks.map((perk, index) => (
-            <div key={index} className="mt-2">
-              <div className="relative">
-                    {markdownify(
-                      perk.perk,
-                      "text-left",
-                      "font-normal"
-                    )}
-                  </div>
-            </div>
-          ))}
+            <ul className="career-ul p-8">
+            {perks.map((perk, index) => (
+                <li key={index} className="p8">
+                  {markdownify(
+                    perk.perk,
+                    "text-center",
+                    "font-normal"
+                  )}
+                </li>
+            ))}
+            </ul>
           </div>
           <div className="relative p-12">
-              {markdownify(cv, "h5", "text-center")}
-            </div>
+            {markdownify(cv, "h5", "text-center")}
+          </div>
         </div>
       </section>
     </div>
