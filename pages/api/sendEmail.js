@@ -3,8 +3,8 @@ import nodemailer from 'nodemailer';
 
 export default async (req, res) => {
   const senderAccount = {
-    user: '',
-    pass: ''
+    user: 'olivier@1-solution.ca',
+    pass: 'Sebt00t1541'
   }
 
   const receiverAddress = 'info@1-solution.ca'
@@ -15,7 +15,7 @@ export default async (req, res) => {
 
       // Configure Nodemailer with your email provider's settings
       const transporter = nodemailer.createTransport({
-        host: "my.smtp.host",
+        host: "smtp.office365.com",
         port: 465,
         secure: true, // use TLS
         auth: {
