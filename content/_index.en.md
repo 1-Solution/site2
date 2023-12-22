@@ -1,7 +1,7 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  title: Let us solve your critical development challenges
+  content: Our team of experts will be happy to listen to you and provide you with the solution you need.
   image: /images/banner-art.svg
   button:
     label: "Contact Us"
@@ -71,7 +71,7 @@ workflow:
 # call_to_action
 call_to_action:
   title: Ready to get started?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  content: Let us know what you need. We'll be happy to help!
   image: '/images/cta.svg'
   button:
     enable: true
