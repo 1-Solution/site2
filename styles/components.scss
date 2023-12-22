@@ -58,9 +58,35 @@
     }
   }
 }
+// career
+.career-section {
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 25%;
+  background-image: url(../public/images/resources_banner-new-01.svg);
+}
+
+
+// values
+.values-section {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 100%;
+  background-image: url(../public/images/banner.svg);
+  background-color: $main;
+}
+
+.values-inner-section {
+  background-color: transparent;
+}
+
 
 //feature card
 .feature-card {
+  background-color: $white2;
   @apply transition-all duration-200 ease-in-out;
   &:hover{box-shadow: 0 0 11px $accent}
 }

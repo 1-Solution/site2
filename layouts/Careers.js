@@ -5,13 +5,13 @@ function Careers({ data }) {
   const { title, profiles, cv, perks, perk_title } = frontmatter;
   return (
     <div>
-      <section className="section">
+      <section className="career-section">
         <div className="container">
           {markdownify(title, "h1", "text-center font-normal")}
           <div className="section row -mt-2">
             {profiles.map((profile, index) => (
               <div key={index} className="mt-2">
-                <div className="bg-white p-12 shadow border feature-card rounded-xl">
+                <div className="bg-white p-12 shadow feature-card rounded-xl">
                   <div className="relative">
                     {markdownify(
                       profile.title,
@@ -25,7 +25,7 @@ function Careers({ data }) {
               </div>
             ))}
           </div>
-          <div className="bg-white p-12 shadow border feature-card rounded-xl flex flex-col justify-center items-center">
+          <div className="bg-white p-12 shadow feature-card rounded-xl flex flex-col justify-center items-center">
             <div className="relative">
               {markdownify(
                 perk_title,

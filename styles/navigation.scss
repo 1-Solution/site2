@@ -35,6 +35,7 @@
   @apply lg:mx-3;
 
   select:focus {
+    color: $accent;
     box-shadow: none;
   }
 }
