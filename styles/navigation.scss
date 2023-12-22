@@ -53,3 +53,12 @@
   color: $accent;
   text-decoration: underline 2px;
 }
+
+.under-nav-link {
+  float: right;
+}
+
+.under-nav-link:hover {
+  color: $accent;
+  text-decoration: underline 2px;
+}

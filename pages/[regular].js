@@ -3,12 +3,13 @@ import Base from "@layouts/Baseof";
 import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
 import Careers from "@layouts/Careers";
+import Policy from "@layouts/Policy"
 import About from "@layouts/About";
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
 
 // for all regular pages
 const RegularPages = ({ data }) => {
-  const { title, meta_title, description, image, noindex, canonical, layout } = data.frontmatter;
+  const { title, meta_title, description, image, noindex, canonical, layout} = data.frontmatter;
   const { content } = data;
 
   return (
@@ -28,7 +29,9 @@ const RegularPages = ({ data }) => {
         <Careers data={data} />
       ) : layout === "about" ? (
         <About data={data} />
-      ) :(
+      ) : layout === "policy" ? (
+        <Policy data={data} />
+      ):(
         <Default data={data} />
       )}
     </Base>
