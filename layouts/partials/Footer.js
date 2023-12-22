@@ -12,6 +12,7 @@ const Footer = () => {
   const { pathname, asPath, query, locale } = router;
   const { footer_content } = config[locale].params;
   const { footer } = menu[locale];
+  const { under_footer } = menu[locale];
 
   const changeLocale = (nextLocale) => {
     router.push({ pathname, query }, asPath, { locale: nextLocale });
@@ -56,7 +57,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="border-t border-border py-6">
-            <a href="#"
+            <a
+              href="#"
               onClick={() => {
                 changeLocale("fr");
               }}
@@ -64,13 +66,25 @@ const Footer = () => {
               fr
             </a>
             <span className="mx-2">|</span>
-            <a href="#"
+            <a
+              href="#"
               onClick={() => {
                 changeLocale("en");
               }}
             >
               en
             </a>
+            <div className="under-nav-link">
+              {under_footer.map((col) => {
+                return (
+                  <div key={col.text}>
+                    <Link href={col.url} rel="">
+                      {col.text}
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

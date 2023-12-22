@@ -27,6 +27,12 @@
         "text": "Nous Contacter",
         "url": "/contact"
       }
+    ],
+    "under_footer": [
+      {
+        "text": "Politique de confidentialité",
+        "url": "/policy"
+      }
     ]
   },
   "en": {
@@ -56,6 +62,12 @@
       {
         "text": "Contact",
         "url": "/contact"
+      }
+    ],
+    "under_footer": [
+      {
+        "text": "Privacy policy",
+        "url": "/policy"
       }
     ]
   }
