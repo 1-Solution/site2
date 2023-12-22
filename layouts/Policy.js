@@ -6,7 +6,7 @@ function Policy({ data }) {
   return (
     <div>
       <section className="section">
-        <div className="container">
+        <div className="container relative p-12">
           {markdownify(title, "h1", "text-center font-normal ")}
           <div>
           {markdownify(info.description, "p", "mt-4")}
