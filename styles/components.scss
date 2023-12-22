@@ -1,7 +1,9 @@
+@import './color.scss';
+
 // section style
 .section {
   @apply pt-[70px] pb-[70px];
-  background-color:ivory;
+  background-color:$white;
 }
 
 // container
@@ -16,7 +18,7 @@
 
 .border {
   border-style: solid 5px;
-  border-color: #b5611d;
+  //border-color: $accent;
 }
 
 .full-height {
@@ -56,11 +58,42 @@
     }
   }
 }
+// career
+.career-section {
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 25%;
+  background-image: url(../public/images/resources_banner-new-01.svg);
+}
+
+
+// values
+.values-section {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 100%;
+  background-image: url(../public/images/banner.svg);
+  background-color: $main;
+}
+
+.values-inner-section {
+  background-color: transparent;
+}
+
 
 //feature card
 .feature-card {
+  background-color: $white2;
   @apply transition-all duration-200 ease-in-out;
 }
+
+.feature-section {
+  background-color: $main;
+}
+
 
 //swiper pagination
 .service-carousel .swiper-pagination {
