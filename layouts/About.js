@@ -50,9 +50,9 @@ function About({ data }) {
           </div>
         </div>
       </section>
-      <section className="section bg-theme-light">
+      <section className="section values-section">
         <div className="container ">
-          <div className="section row -mt-2 bg-theme-light">
+          <div className="section row -mt-2 values-inner-section">
             {markdownify(valueTitle, "h1", "text-center font-normal")}
             {values.map((values, index) => (
               <div key={index} className="col-12 md:col-6 mt-2">
