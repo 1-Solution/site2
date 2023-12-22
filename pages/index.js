@@ -56,20 +56,20 @@ const Home = ({ frontmatter }) => {
           <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
             {feature.features.map((item, i) => (
               <div
-                className="feature-card rounded-xl bg-white p-5 pb-8 text-center border"
+                className="feature-card rounded-xl bg-white p-5 pb-8 text-center border flex flex-col h-full"
                 key={`feature-${i}`}
               >
                 {item.icon && (
                   <Image
-                    className="mx-auto"
+                    className="mx-auto flex-grow"
                     src={item.icon}
                     width={90}
                     height={90}
                     alt=""
                   />
                 )}
-                <div className="mt-4">
-                  {markdownify(item.name, "h3", "h5")}
+                <div className="mt-4 flex-none">
+                  {markdownify(item.name, "h5")}
                   <p className="mt-3">{item.content}</p>
                 </div>
               </div>
