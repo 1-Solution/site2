@@ -48,7 +48,7 @@ const Home = ({ frontmatter }) => {
       </section>
 
       {/* Features */}
-      <section className="section bg-theme-light">
+      <section className="section feature-section">
         <div className="container">
           <div className="text-center">
             <h2>{markdownify(feature.title)}</h2>
