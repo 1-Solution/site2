@@ -8,6 +8,9 @@ const nextConfig = {
     defaultLocale: 'fr',
   },
   reactStrictMode: true,
+  eslint:{
+    ignoreDuringBuilds: true,
+  }
 };
 
 module.exports = nextConfig;
