@@ -24,17 +24,17 @@ values:
     answer: Nous continuons sans cesse de nous améliorer `:` l’acquisition de nouvelles connaissances, de nouvelles façons de faire et l'exploration de nouvelles tendances font partie de notre ADN.
 team:
   - name: Antoine Theriault-Richer  
-    bio: test  test
+    bio: Président de l’entreprise. Il a plus de 10 ans d’expérience en technologies. L’homme de tous les défis.
 
   - name: Bruno Laporte
-    bio: test  test
+    bio: Vice-président. Considère le côté humain des plus important, être à l’écoute de ce que les gens disent ou ne disent pas est sa spécialité, en plus d’être un développeur chevronné.
 
   - name: Olivier Poupier
-    bio: test  test
+    bio: Développeur-analyste. Plongé dans la programmation depuis son enfance, on peut toujours compter sur lui pour nous donner l'heure juste ou son appuie technique.
 
   - name: Jean-Christophe Viau
-    bio: test  test
+    bio: Développeur-analyste. Véritable couteau-suisse du développement Jean-Christophe se démarque par sa persévérance et sa débrouillardise.
 
   - name: Simon Pepin
-    bio: test  test
+    bio: Ingénieur en technologie de l'information. Une heureuse rencontre entre ses capacités analytiques et son approche chaleureuse. 
 ---
