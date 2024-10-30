@@ -21,7 +21,9 @@ const Contact = ({ data }) => {
               className="contact-form"
               method="POST"
               action='https://formspree.io/f/xleoyvgl'
+              encType="multipart/form-data"
             >
+
               <div className="mb-3">
                 <input
                   className="form-input w-full rounded"
@@ -55,6 +57,13 @@ const Contact = ({ data }) => {
                   className="form-textarea w-full rounded-md"
                   rows="7"
                   placeholder={message}
+                />
+              </div>
+              <div className="mb-3">
+                <input 
+                  type="file" 
+                  name="attachment"
+                  accept="application/msword, text/plain, application/pdf"
                 />
               </div>
               <button type="submit" className="btn btn-primary">
