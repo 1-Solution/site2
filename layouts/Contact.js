@@ -20,8 +20,9 @@ const Contact = ({ data }) => {
             <form
               className="contact-form"
               method="POST"
-              action='https://formspree.io/f/xleoyvgl'
+              // action='https://formspree.io/f/xleoyvgl'
               encType="multipart/form-data"
+              netlify
             >
 
               <div className="mb-3">
