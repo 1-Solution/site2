@@ -22,7 +22,7 @@ const Contact = ({ data }) => {
               method="POST"
               // action='https://formspree.io/f/xleoyvgl'
               encType="multipart/form-data"
-              netlify
+              data-netlify="true"
             >
 
               <div className="mb-3">
