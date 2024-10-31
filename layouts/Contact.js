@@ -18,9 +18,9 @@ const Contact = ({ data }) => {
         <div className="section row pb-0">
           <div className="col-12 md:col-6 lg:col-7">
             <form
+              name="contactForm"
               className="contact-form"
               method="POST"
-              // action='https://formspree.io/f/xleoyvgl'
               encType="multipart/form-data"
               data-netlify="true"
             >
@@ -67,6 +67,7 @@ const Contact = ({ data }) => {
                   accept="application/msword, text/plain, application/pdf"
                 />
               </div>
+              <div netlify-recaptcha></div>
               <button type="submit" className="btn btn-primary">
                 {submit}
               </button>
