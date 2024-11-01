@@ -17,13 +17,18 @@ const Contact = ({ data }) => {
         {markdownify(title, "h1", "text-center font-normal")}
         <div className="section row pb-0">
           <div className="col-12 md:col-6 lg:col-7">
-            <form
+            {/* <form
               className="contact-form"
               method="POST"
               action='https://formspree.io/f/xleoyvgl'
               encType="multipart/form-data"
-            >
-
+            > */}
+            <form 
+              className="contact-form"
+              method="POST"
+              data-netlify="true"
+              name="form-Contact"
+              >
               <div className="mb-3">
                 <input
                   className="form-input w-full rounded"
