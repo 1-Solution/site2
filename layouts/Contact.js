@@ -17,61 +17,70 @@ const Contact = ({ data }) => {
         {markdownify(title, "h1", "text-center font-normal")}
         <div className="section row pb-0">
           <div className="col-12 md:col-6 lg:col-7">
-          <form 
-   className="contact-form"
-   method="POST"
-   data-netlify="true"
-   name="Contact"
-   encType="multipart/form-data"
- >
-   <input type="hidden" name="form-name" value="Contact" />
-   <div className="mb-3">
-     <input
-       className="form-input w-full rounded"
-       name="name"
-       type="text"
-       placeholder={name}
-       required
-     />
-   </div>
-   <div className="mb-3">
-     <input
-       className="form-input w-full rounded"
-       name="email"
-       type="email"
-       placeholder={email}
-       required
-     />
-   </div>
-   <div className="mb-3">
-     <input
-       className="form-input w-full rounded"
-       name="subject"
-       type="text"
-       placeholder={subject}
-       required
-     />
-   </div>
-   <div className="mb-3">
-     <textarea
-       name="message"
-       className="form-textarea w-full rounded-md"
-       rows="7"
-       placeholder={message}
-       required
-     />
-   </div>
-   <div className="mb-3">
-     <input 
-       type="file" 
-       name="attachment"
-       accept="application/msword, text/plain, application/pdf"
-     />
-   </div>
-   <button type="submit" className="btn btn-primary">
-     {submit}
-   </button>
- </form>
+            <form
+              className="contact-form"
+              method="POST"
+              data-netlify="true"
+              name="Contact"
+              encType="multipart/form-data"
+              netlify-honeypot="ne-pas-remplir"
+              data-netlify-recaptcha="true"
+            >
+
+              <p class="hidden">
+                <label>
+                  Don’t fill this out if you’re human: <input name="ne-pas-remplir" />
+                </label>
+              </p>
+              <input type="hidden" name="form-name" value="Contact" />
+              <div className="mb-3">
+                <input
+                  className="form-input w-full rounded"
+                  name="name"
+                  type="text"
+                  placeholder={name}
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <input
+                  className="form-input w-full rounded"
+                  name="email"
+                  type="email"
+                  placeholder={email}
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <input
+                  className="form-input w-full rounded"
+                  name="subject"
+                  type="text"
+                  placeholder={subject}
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <textarea
+                  name="message"
+                  className="form-textarea w-full rounded-md"
+                  rows="7"
+                  placeholder={message}
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <input
+                  type="file"
+                  name="attachment"
+                  accept="application/msword, text/plain, application/pdf"
+                />
+              </div>
+              <div data-netlify-recaptcha="true"></div>
+              <button type="submit" className="btn btn-primary">
+                {submit}
+              </button>
+            </form>
 
           </div>
           <div className="content col-12 md:col-6 lg:col-5">
