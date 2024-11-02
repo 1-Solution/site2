@@ -23,15 +23,8 @@ const Contact = ({ data }) => {
               data-netlify="true"
               name="Contact"
               encType="multipart/form-data"
-              netlify-honeypot="ne-pas-remplir"
               data-netlify-recaptcha="true"
             >
-
-              <p class="hidden">
-                <label>
-                  Don’t fill this out if you’re human: <input name="ne-pas-remplir" />
-                </label>
-              </p>
               <input type="hidden" name="form-name" value="Contact" />
               <div className="mb-3">
                 <input
