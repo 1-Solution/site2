@@ -23,7 +23,6 @@ const Contact = ({ data }) => {
               data-netlify="true"
               name="Contact"
               encType="multipart/form-data"
-              data-netlify-recaptcha="true"
             >
               <input type="hidden" name="form-name" value="Contact" />
               <div className="mb-3">
@@ -69,7 +68,6 @@ const Contact = ({ data }) => {
                   accept="application/msword, text/plain, application/pdf"
                 />
               </div>
-              <div data-netlify-recaptcha="true"></div>
               <button type="submit" className="btn btn-primary">
                 {submit}
               </button>
