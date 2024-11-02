@@ -61,13 +61,6 @@ const Contact = ({ data }) => {
                   required
                 />
               </div>
-              <div className="mb-3">
-                <input
-                  type="file"
-                  name="attachment"
-                  accept="application/msword, text/plain, application/pdf"
-                />
-              </div>
               <button type="submit" className="btn btn-primary">
                 {submit}
               </button>
