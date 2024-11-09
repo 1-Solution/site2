@@ -18,5 +18,15 @@ perks:
   - perk: Hackathon de compagnie
   - perk: Nos fameux vendredi PM...
 
+apply_now: Postuler maintenant !
+fields:
+  name: Nom
+  email: Votre courriel
+  subject: Sujet
+  message: Votre message
+  upload_cv: Téléchargez votre CV
+  selected_file: Fichier choisi
+  submit: Envoyer
+
 cv: Interessé? Faites nous parvenir votre CV par courriel à cv@1-solution.ca
 ---
