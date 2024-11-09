@@ -70,12 +70,14 @@ function Careers({ data }) {
               <input type="hidden" name="form-name" value="Career" />
               <input
                 type="text"
+                name="name"
                 placeholder={name}
                 className="p-4 border border-gray-300 rounded-md"
                 required
               />
               <input
                 type="email"
+                name="email"
                 placeholder={email}
                 className="p-4 border border-gray-300 rounded-md"
                 required
@@ -84,12 +86,14 @@ function Careers({ data }) {
                 placeholder={message}
                 className="p-4 border border-gray-300 rounded-md"
                 rows="4"
+                name="message"
                 required
               />
               <label className="flex items-center justify-center p-4 border border-gray-300 rounded-md text-lg font-semibold text-gray-700 cursor-pointer bg-gray-100 hover:bg-gray-200 transition">
                 {upload_cv}
                 <input
                   type="file"
+                  name="cv"
                   required
                   hidden
                   onChange={handleFileChange}
@@ -109,7 +113,6 @@ function Careers({ data }) {
             </form>
           </div>
           <div className="relative p-12">
-            {markdownify(cv, "h5", "text-center")}
           </div>
         </div>
       </section>

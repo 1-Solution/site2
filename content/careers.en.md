@@ -20,12 +20,12 @@ perks:
 
 apply_now: Apply now!
 fields:
-  name: name
-  email: your email
-  message: your message
+  name: Name
+  email: Your email
+  message: Your message
   upload_cv: Upload your CV
   selected_file: Selected file
-  submit: send now
+  submit: Send now
 
 cv: Interested? Send us your CV via email at cv@1-solution.ca
 ---
