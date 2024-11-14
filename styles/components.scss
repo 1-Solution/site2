@@ -3,6 +3,11 @@
 // section style
 .section {
   @apply pt-[70px] pb-[70px];
+
+  &.no-padding-bottom {
+    // Pour fix les problèmes de OCD à Bruno
+    padding-bottom: 0;
+  }
   background-color:$white;
 }
 

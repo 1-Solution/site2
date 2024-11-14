@@ -19,9 +19,9 @@ function Careers({ data }) {
       <section className="career-section">
         <div className="container">
           {markdownify(title, "h1", "text-center font-normal")}
-          <div className="section row -mt-2">
+          <div className="section no-padding-bottom row -mt-4">
             {profiles.map((profile, index) => (
-              <div key={index} className="mt-2">
+              <div key={index} className="mt-4">
                 <div className="bg-white p-12 shadow feature-card rounded-xl">
                   <div className="relative">
                     {markdownify(
@@ -36,7 +36,7 @@ function Careers({ data }) {
               </div>
             ))}
           </div>
-          <div className="bg-white p-12 shadow feature-card rounded-xl flex flex-col justify-center items-center">
+          <div className="bg-white p-12 shadow feature-card rounded-xl flex flex-col justify-center items-center mt-4">
             <div className="relative">
               {markdownify(
                 perk_title,
@@ -56,7 +56,7 @@ function Careers({ data }) {
               ))}
             </ul>
           </div>
-          <div className="bg-white p-12 shadow feature-card rounded-xl mt-8">
+          <div className="bg-white p-12 shadow feature-card rounded-xl mt-4">
             <div className="relative mb-4">
               {markdownify(apply_now, "h2", "text-center")}
             </div>
