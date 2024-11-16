@@ -8,6 +8,9 @@
     // Pour fix les problèmes de OCD à Bruno
     padding-bottom: 0;
   }
+  &.no-padding-top {
+    padding-top: 0;
+  }
   background-color:$white;
 }
 
