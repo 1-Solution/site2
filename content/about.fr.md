@@ -26,20 +26,20 @@ team:
   - name: Antoine Theriault-Richer  
     bio: Il a plus de 10 ans d’expérience en technologies. L’homme de tous les défis.
     title: Président de l’entreprise
-    photoId: IMG_4164.JPG
+    photoId: IMG_4164.jpg
 
   - name: Bruno Laporte
     bio: Considère le côté humain des plus important, être à l’écoute de ce que les gens disent ou ne disent pas est sa spécialité, en plus d’être un développeur chevronné.
     title: Vice-président
-    photoId: IMG_4157.JPG
+    photoId: IMG_4157.jpg
 
   - name: Jean-Christophe Viau
     bio: Véritable couteau-suisse du développement Jean-Christophe se démarque par sa persévérance et sa débrouillardise.
     title: Développeur-analyste
-    photoId: IMG_4151.JPG
+    photoId: IMG_4151.jpg
 
   - name: Simon Pepin
     bio: Une heureuse rencontre entre ses capacités analytiques et son approche chaleureuse.
     title: Ingénieur en technologie de l'information
-    photoId: IMG_4180.JPG
+    photoId: IMG_4180.jpg
 ---
