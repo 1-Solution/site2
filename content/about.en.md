@@ -24,17 +24,22 @@ values:
     answer: We're constantly striving for improvement `:` the acquisition of new knowledge, new ways of doing things and the exploration of new trends are part of our DNA.
 team:
   - name: Antoine Theriault-Richer  
-    bio: President of the company. He has over 10 years' experience in technology. A man for all challenges.
+    bio: He has over 10 years' experience in technology. A man for all challenges.
+    title: President of the company
+    photoId: IMG_4164.JPG
 
   - name: Bruno Laporte
-    bio: Vice-President. Considers the human side of things most important, listening to what people say or don't say is his specialty, in addition to being a seasoned developer.
-
-  - name: Olivier Poupier
-    bio: Developer-analyst. Immersed in programming since childhood, he can always be counted on to share how he sees it or technological advice.
+    bio: Considers the human side of things most important, listening to what people say or don't say is his specialty, in addition to being a seasoned developer.
+    title: Vice-President
+    photoId: IMG_4157.JPG
 
   - name: Jean-Christophe Viau
-    bio: Developer-analyst. A true Swiss Army knife of development, Jean-Christophe stands out for his perseverance and resourcefulness.
+    bio: A true Swiss Army knife of development, Jean-Christophe stands out for his perseverance and resourcefulness.
+    title: Developer-analyst
+    photoId: IMG_4151.JPG
     
   - name: Simon Pepin
-    bio: Information Technology Engineer. A happy marriage between his analytical skills and his warm-hearted approach.
+    bio: A happy marriage between his analytical skills and his warm-hearted approach.
+    title: Information Technology Engineer
+    photoId: IMG_4180.JPG
 ---
