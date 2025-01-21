@@ -2,7 +2,9 @@
 title: "Politique de confidentialité"
 layout: "policy"
 draft: false
+filename: "politique_confidentialite_fr.txt"
 info: 
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  description: "Notre politique de confidentialité est disponible en cliquant"
+  action: "ici."
 
 ---
